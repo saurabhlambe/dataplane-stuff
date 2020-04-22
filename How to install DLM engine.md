@@ -66,6 +66,7 @@ su postgres -c '/usr/bin/pg_ctl -D /var/lib/pgsql/data reload'
 ![][logo1]
 
 2. Go to the Versions tab:
+
 ![][logo2]
 
 3. Click on Manage Versions and select the relevant HDP version:
