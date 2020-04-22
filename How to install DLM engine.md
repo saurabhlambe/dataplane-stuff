@@ -63,16 +63,16 @@ su postgres -c '/usr/bin/pg_ctl -D /var/lib/pgsql/data reload'
 ## Add DLM Engine service in Ambari
 
 1. Click on Stack and Versions:
-(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.01.36.png)
+!(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.01.36.png)
 
 2. Go to the Versions tab:
-(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.29.34.png)
+!(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.29.34.png)
 
 3. Click on Manage Versions and select the relevant HDP version:
-(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.30.18.png)
+!(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.30.18.png)
 
 4. Update the DLM repository with your local repository URL:
-(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.34.49.png)
+!(https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.34.49.png)
 
 5. Go to Add service and add DLM. Update the following properties during DLM engine installation:
 * beacon_database
