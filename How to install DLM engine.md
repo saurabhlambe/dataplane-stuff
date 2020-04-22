@@ -63,6 +63,7 @@ su postgres -c '/usr/bin/pg_ctl -D /var/lib/pgsql/data reload'
 ## Add DLM Engine service in Ambari
 
 1. Click on Stack and Versions:
+
 ![][logo1]
 
 2. Go to the Versions tab:
@@ -70,9 +71,11 @@ su postgres -c '/usr/bin/pg_ctl -D /var/lib/pgsql/data reload'
 ![][logo2]
 
 3. Click on Manage Versions and select the relevant HDP version:
+
 ![][logo3]
 
 4. Update the DLM repository with your local repository URL:
+
 ![][logo4]
 
 [logo1]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.01.36.png
