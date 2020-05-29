@@ -35,26 +35,20 @@ setenforce 0
 sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/sysconfig/selinux
 ```
 
-### 2. Install and start Docker
-```bash
-yum install -y docker
-systemctl start docker
-```
-
-### 3. Download and extract the DataPlane tarball
+### 2. Download and extract the DataPlane tarball
 ```bash
 wget http://xxxxxxxxxxxxxxxxxxx/DP-1.3.0.0-76-centos7-rpm.tar.gz
 tar xvf DP-1.3.0.0-76-centos7-rpm.tar.gz
 ```
 
-### 4. Install dp-select and dp-core services
+### 3. Install dp-select and dp-core services
 ```bash
 cd DP/centos7/1.3.0.0/dp-select
 rpm -ivh dp-select-1.3.0.0-76.noarch.rpm
 cd ../dp_core
 rpm -ivh dp-core_1_3_0_0_76-1.7.0.1.3.0.0-76.noarch.rpm
 ```
-### 5. Install and setup Postgres database
+### 4. Install and setup Postgres database
 #### a. Install Postgres 9.6 in CentOS7
 ```bash
 yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm -y
@@ -100,7 +94,7 @@ listen_addresses = '*'		# what IP address(es) to listen on;
 systemctl restart postgresql-9.6.service
 ```
 
-### 6. Edit config.env.sh
+### 5. Edit config.env.sh
 ```bash
 cat /usr/dp/current/core/bin/config.env.sh
 --
@@ -118,7 +112,7 @@ DATABASE_USER="dpuser"
 DATABASE_PASS="bigdata"
 ```
 
-### 7. Deploy the DataPlane service
+### 6. Deploy the DataPlane service
 ```bash
 cd /usr/dp/1.3.0.0-76/core/bin
 # Get the DP host machine IP and keep it handy
@@ -135,4 +129,4 @@ hostname -i
 # Initialization and start complete.
 ```
 
-### 8. Access DP in the browser using its IP address
+### 7. Access DP in the browser using its IP address
