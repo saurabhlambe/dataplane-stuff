@@ -61,9 +61,9 @@ systemctl start  postgresql-9.6.service
 ```bash
 su - postgres
 psql
-CREATE DATABASE dpdb;
-CREATE USER dpuser WITH PASSWORD 'bigdata';
-GRANT ALL PRIVILEGES ON DATABASE dpdb TO dpuser;
+CREATE DATABASE dataplane;
+CREATE USER dataplane WITH PASSWORD 'bigdata';
+GRANT ALL PRIVILEGES ON DATABASE dataplane TO dataplane;
 ```
 #### c. Allow permissions for all users/hosts to access DB
 ```bash
@@ -80,9 +80,9 @@ host    all             all             ::1/128                 trust
 #local   replication     postgres                                peer
 #host    replication     postgres        127.0.0.1/32            ident
 #host    replication     postgres        ::1/128                 ident
-local all dpuser trust
-host all dpuser 0.0.0.0/0 trust
-host all dpuser ::/0 trust
+local all dataplane trust
+host all dataplane 0.0.0.0/0 trust
+host all dataplane ::/0 trust
 ```
 #### d. Allow all addresses to listen
 ```bash
