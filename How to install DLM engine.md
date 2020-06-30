@@ -14,13 +14,13 @@ For example: ```ambari-server install-mpack mpack=beacon-ambari-mpack-1.5.1.0-3.
 
 ## Set up a local repository for DLM engine package
 1. Install and start HTTPD service:
-```# yum install -y httpd
-# systemctl start httpd
+``` yum install -y httpd
+ systemctl start httpd
 ```
 
 2. Copy and extract the DLM engine mpack tarball in `/var/www/html`:
-```# mv /opt/DLM-1.5.1.0-3-centos7-rpm.tar.gz /var/www/html
-# tar xf DLM-1.5.1.0-3-centos7-rpm.tar.gz
+``` mv /opt/DLM-1.5.1.0-3-centos7-rpm.tar.gz /var/www/html
+ tar xf DLM-1.5.1.0-3-centos7-rpm.tar.gz
 ```
 
 3. Browse to the HTTPD page and verify if you can access the repository at:
@@ -29,13 +29,13 @@ _http://<local-repository-host>:<default-http-port>/DLM/centos7/1.5.1.0/_
 ## Set up Postgres DB for DLM engine
 1. Install and configure Postgres JDBC driver:
 ```shell
-# yum install postgresql-jdbc -y && chmod 644 /usr/share/java/postgresql-jdbc.jar && ambari-server setup --jdbc-db=postgres --jdbc-driver=/usr/share/java/postgresql-jdbc.jar
+yum install postgresql-jdbc -y && chmod 644 /usr/share/java/postgresql-jdbc.jar && ambari-server setup --jdbc-db=postgres --jdbc-driver=/usr/share/java/postgresql-jdbc.jar
 ```
 
 1. Login to _psql_ as postgres user:
 ```shell
 su - postgresql
-$ psql
+psql
 ```
 
 2. Create role, DB, and set privileges:
@@ -57,7 +57,7 @@ host all  beacon ::/0 trust" >> /var/lib/pgsql/data/pg_hba.conf
 
 4. Reload PostgreSQL settings:
 ```
-su postgres -c '/usr/bin/pg_ctl -D /var/lib/pgsql/data reload'
+su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 ```
 
 ## Add DLM Engine service in Ambari
