@@ -46,7 +46,7 @@ GRANT ALL PRIVILEGES ON DATABASE beacondb TO beacon;
 ```
 Where `beacon` is the database user, _bigdata_ is the database password, and `beacondb` is the DB itself.
 
-To configure a MySQL DB, check out [Configure MySQL Database fore DLM engine](https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/installation/content/dlm_configure_mysql_external_database.html)
+To configure a MySQL DB, check out [Configure MySQL Database for DLM engine](https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/installation/content/dlm_configure_mysql_external_database.html)
 
 3. Configure Postgres so that DLM engine can access the database:
 ```shell
@@ -84,8 +84,8 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 [logo4]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.34.49.png
 
 5. Go to Add service and add DLM. Update the following properties during DLM engine installation:
-* beacon_database
+* beacon_database: org.postgresql.Driver
 * beacon_principal
-* beacon_store_db_name
-* beacon_store_url
-* beacon_store_user
+* beacon_store_db_name: beacondb
+* beacon_store_url: jdbc:postgresql://<db-hostname>:5432/beacondb
+* beacon_store_user: beacon
