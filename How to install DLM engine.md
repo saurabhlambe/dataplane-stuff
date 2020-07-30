@@ -50,7 +50,7 @@ To configure a MySQL DB, check out [Configure MySQL Database for DLM engine](htt
 
 3. Configure Postgres so that DLM engine can access the database:
 ```shell
-echo "local beacondb      beacon trust
+echo "local beacon      beacon trust
 host all  beacon 0.0.0.0/0 trust
 host all  beacon ::/0 trust" >> /var/lib/pgsql/data/pg_hba.conf
 ```
@@ -84,8 +84,8 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 [logo4]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.34.49.png
 
 5. Go to Add service and add DLM. Update the following properties during DLM engine installation:
-* beacon_database: org.postgresql.Driver
+* beacon_database: _org.postgresql.Driver_
 * beacon_principal
-* beacon_store_db_name: beacondb
-* beacon_store_url: jdbc:postgresql://<db-hostname>:5432/beacondb
-* beacon_store_user: beacon
+* beacon_store_db_name: _beacondb_
+* beacon_store_url: _jdbc:postgresql://db-hostname:5432/beacondb_
+* beacon_store_user: _beacon_
