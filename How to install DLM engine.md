@@ -89,3 +89,4 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 * beacon_store_db_name: _beacondb_
 * beacon_store_url: _jdbc:postgresql://db-hostname:5432/beacondb_
 * beacon_store_user: _beacon_
+* beacon_store_password: _bigdata_
