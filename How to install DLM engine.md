@@ -64,7 +64,7 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 
 1. Click on Stack and Versions:
 
-![][logo1]
+![/blob/master/Screenshot 2020-04-22 at 14.30.18.png][logo1]
 
 2. Go to the Versions tab:
 
