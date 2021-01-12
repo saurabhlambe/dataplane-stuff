@@ -72,16 +72,11 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 
 3. Click on Manage Versions and select the relevant HDP version:
 
-![Manage versions][Screenshot 2020-04-22 at 14.30.18.png]
+![Manage versions](Screenshot 2020-04-22 at 14.30.18.png)
 
 4. Update the DLM repository with your local repository URL:
 
-![Update DLM repo][Screenshot 2020-04-22 at 14.34.49.png]
-
-[logo1]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.01.36.png
-[logo2]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.29.34.png
-[logo3]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.30.18.png
-[logo4]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.34.49.png
+![Update DLM repo](Screenshot 2020-04-22 at 14.34.49.png)
 
 5. Go to Add service and add DLM. Update the following properties during DLM engine installation:
 * beacon_database: _org.postgresql.Driver_
