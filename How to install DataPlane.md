@@ -129,6 +129,8 @@ hostname -i
 # Initialization and start complete.
 ```
 
-### 7. Access DP in the browser using its IP address or hostname
+### 7. Access DP in the browser using its IP address or hostname and log in as *admin* user
+![DataPlane login](Screenshot_2021-01-12_at_16.13.15.png)
 
-
+### 8. Go to Users > LDAP settings and enter relevant information
+![DataPlane LDAP info](Screenshot_2021-01-12_at_16.15.13.png)
