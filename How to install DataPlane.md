@@ -103,12 +103,12 @@ cat /usr/dp/current/core/bin/config.env.sh
 USE_EXTERNAL_DB="yes"
 
 # JDBC URL for connecting to the external database. Change host_name and port and database name as required. Uncomment when 'USE_EXTERNAL_DB' is set to 'yes'.
-DATABASE_URI="jdbc:postgresql://172.26.96.54:5432/dpdb"
+DATABASE_URI="jdbc:postgresql://172.26.96.54:5432/dataplane"
 
 # Uncomment below line if SSL connection is required
 # DATABASE_URI="jdbc:postgresql://host_name:5432/dataplane?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
 
-DATABASE_USER="dpuser"
+DATABASE_USER="dataplane"
 DATABASE_PASS="bigdata"
 ```
 
