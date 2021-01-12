@@ -129,5 +129,6 @@ hostname -i
 # Initialization and start complete.
 ```
 
-### 7. Access DP in the browser using its IP address
+### 7. Access DP in the browser using its IP address or hostname
+
 
