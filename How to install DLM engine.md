@@ -64,19 +64,19 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 
 1. Click on Stack and Versions:
 
-![Alt-Text](/master/Screenshot 2020-04-22 at 14.30.18.png)
+![Stack and Versions](Screenshot 2020-04-22 at 14.01.36.png)
 
 2. Go to the Versions tab:
 
-![][logo2]
+![Versions](Screenshot 2020-04-22 at 14.29.34.png)
 
 3. Click on Manage Versions and select the relevant HDP version:
 
-![][logo3]
+![Manage versions][Screenshot 2020-04-22 at 14.30.18.png]
 
 4. Update the DLM repository with your local repository URL:
 
-![][logo4]
+![Update DLM repo][Screenshot 2020-04-22 at 14.34.49.png]
 
 [logo1]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.01.36.png
 [logo2]: https://github.com/saurabhlambe/DataPlane-stuff/blob/master/Screenshot%202020-04-22%20at%2014.29.34.png
