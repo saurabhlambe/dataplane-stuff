@@ -52,7 +52,7 @@ To configure a MySQL DB, check out [Configure MySQL Database for DLM engine](htt
 ```shell
 echo "local beacon      beacon trust
 host all  beacon 0.0.0.0/0 trust
-host all  beacon ::/0 trust" >> /var/lib/pgsql/data/pg_hba.conf
+host all  beacon ::/0 trust" >> /var/lib/pgsql/9.6/data/pg_hba.conf
 ```
 
 4. Reload PostgreSQL settings:
