@@ -1,6 +1,6 @@
 # DataPlane setup
 
-Download and run this bash [script](https://gitlab.com/-/snippets/2109023) or follow these steps:
+Download and run this bash [script](https://gitlab.com/-/snippets/2109023) to install docker and continue from [here](https://gitlab.com/saurabhlambe/DataPlane-stuff/-/blob/master/How%20to%20install%20DataPlane.md#b-installing-dataplane) or follow these steps:
 
 ## A. Install and setup docker
 ### 1. Remove old versions
