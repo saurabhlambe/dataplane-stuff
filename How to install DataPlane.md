@@ -88,8 +88,7 @@ host all dataplane ::/0 trust
 ```
 #### d. Allow all addresses to listen
 ```bash
-grep listen_addresses /var/lib/pgsql/9.6/data/postgresql.conf
-listen_addresses = '*'		# what IP address(es) to listen on;
+sed -i 's/#listen_addresses/listen_addresses/;s/localhost/*/' /var/lib/pgsql/9.6/data/postgresql.conf
 ```
 #### e. Restart postgres-9.6
 ```bash
