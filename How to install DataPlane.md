@@ -1,5 +1,7 @@
 # DataPlane setup
 
+Download and run this bash [script](<script src="https://gitlab.com/-/snippets/2109023.js"></script>) or follow these steps:
+
 ## A. Install and setup docker
 ### 1. Remove old versions
 ```bash
