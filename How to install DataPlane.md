@@ -135,3 +135,6 @@ hostname -i
 
 ### 8. Go to Users > LDAP settings and enter relevant information
 ![DataPlane LDAP info](Screenshot_2021-01-12_at_16.15.13.png)
+
+> Optional: after logging in as LDAP user for the first time, confirm if tables were created in the Postgres DB:
+> ```psql -U dataplane -d dataplane -W  -h `hostname -f````
