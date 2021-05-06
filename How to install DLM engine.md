@@ -81,7 +81,7 @@ su postgres -c '/usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ reload'
 5. Go to Add service and add DLM. Update the following properties during DLM engine installation:
 * beacon_database: _org.postgresql.Driver_
 * beacon_principal
-* beacon_store_db_name: _beacondb_
-* beacon_store_url: _jdbc:postgresql://db-hostname:5432/beacondb_
+* beacon_store_db_name: _beacon_
+* beacon_store_url: _jdbc:postgresql://db-hostname:5432/beacon_
 * beacon_store_user: _beacon_
 * beacon_store_password: _bigdata_
