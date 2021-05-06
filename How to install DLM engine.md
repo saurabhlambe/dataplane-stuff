@@ -24,7 +24,7 @@ For example: ```ambari-server install-mpack mpack=beacon-ambari-mpack-1.5.1.0-3.
 ```
 
 3. Browse to the HTTPD page and verify if you can access the repository at:
-_http://<local-repository-host>:<default-http-port>/DLM/centos7/1.5.1.0/_
+_http://local-repository-host:default-http-port/DLM/centos7/1.5.1.0/_
 
 ## Set up Postgres DB for DLM engine
 1. Install and configure Postgres JDBC driver:
