@@ -41,10 +41,10 @@ psql
 2. Create role, DB, and set privileges:
 ```sql
 CREATE USER beacon WITH PASSWORD 'bigdata';
-CREATE DATABASE beacondb;
-GRANT ALL PRIVILEGES ON DATABASE beacondb TO beacon;
+CREATE DATABASE beacon;
+GRANT ALL PRIVILEGES ON DATABASE beacon TO beacon;
 ```
-Where `beacon` is the database user, _bigdata_ is the database password, and `beacondb` is the DB itself.
+Where `beacon` is the database user, _bigdata_ is the database password, and `beacon` is the DB itself.
 
 To configure a MySQL DB, check out [Configure MySQL Database for DLM engine](https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/installation/content/dlm_configure_mysql_external_database.html)
 
